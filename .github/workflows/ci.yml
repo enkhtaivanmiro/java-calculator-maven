@@ -23,5 +23,8 @@ jobs:
         run: mvn checkstyle:check
       - name: Run JUnit tests and JaCoCo coverage check
         run: mvn test jacoco:check
+      - name: Run tests with JaCoCo
+        run: mvn test
+      
       - name: Generate JaCoCo report
         run: mvn jacoco:report
