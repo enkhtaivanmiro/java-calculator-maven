@@ -14,7 +14,7 @@ public class Division {
      */
     public double divide(double a, double b) {
         if (b == 0) {
-            throw new IllegalArgumentException("Cannot divide by zero");
+            throw new IllegalArgumentException("Cannot divide by zero. Division operation is undefined.");
         }
         return a / b;
     }
