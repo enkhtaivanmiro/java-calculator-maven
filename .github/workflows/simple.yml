@@ -1,12 +1,21 @@
-name: Simple Test
+name: Simple Java Setup
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  hello:
+  java-setup:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello World
-        run: echo "Hello, GitHub Actions!"
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      
+      - name: Verify Java installation
+        run: java -version
