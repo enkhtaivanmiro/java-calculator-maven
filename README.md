@@ -13,3 +13,5 @@ A simple Java calculator project built with Maven to demonstrate Git workflow an
 
 - Main code in `src/main/java/lab15/sict/must/edu/mn/`
 - Tests in `src/test/java/lab15/sict/must/edu/mn/`
+
+##test
